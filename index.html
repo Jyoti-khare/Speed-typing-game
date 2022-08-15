@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed typing game</title>
+    <link rel="stylesheet" href="speed_type.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1 id="title">Speed typing</h1>
+    </div>
+    <div class="partition">
+
+        <div class="container">
+            <div class="line1">
+                <p>Type the given word within
+                    <span id="seconds">5</span> Seconds:
+                </p>
+            </div>
+            <h2 class="display" id="current-word">hello</h2>
+            <input type="text" class="form-control" placeholder="Start typing..." id="word-input" autofocus>
+            <h4 id="message"></h4>
+
+            <!-- time & score -->
+            <h3>Time:
+                <span id="time">0</span>
+            </h3>
+            <h3>Score:
+                <span id="score">0</span>
+            </h3>
+        </div>
+        <div class="container">
+            <button id="startbtn" onclick="init()">START</button>
+            <h3 class="highscore">High Score:
+                <span id="highscore">0</span>
+            </h3>
+            <label for="Levels" id="label">Choose a level:</label>
+            <select name="level" id="levels" onchange="getOption()">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+        </div>
+    </div>
+    <!-- Instructions -->
+    <div class="instructions">
+        <h4>Instructions</h4>
+        <p>Choose your level and START, type each word in the given amount of time to score. <br>
+            To play again, just type the current word and your score will reset.</p>
+    </div>
+
+    <script src="speed_type.js"></script>
+</body>
+
+</html>

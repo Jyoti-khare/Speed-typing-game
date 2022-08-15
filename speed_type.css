@@ -1,0 +1,71 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+}
+.title{
+    /* margin: 0.6rem; */
+    background-color: rgb(89, 146, 146);   
+}
+#title{
+    font-size: 2.1rem;
+    font-weight: bold;
+    padding: 0.4rem;
+}
+ .partition{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0.5rem;
+    margin-bottom: 1rem;
+} 
+.container{
+    background: rgb(19, 18, 18,0.4);
+}
+#seconds,#time, #score, #highscore{
+    font-weight: bold;
+    font-size:large;
+}
+#message{
+    color: rgb(207, 247, 31);
+    font-size: 1.5rem;
+}
+.instructions{
+    width: 100%;
+    background-color: rgb(89, 146, 146,0.4);
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+.display{
+    font-size: 4rem;
+    padding: 0.6rem;
+    margin: 0;
+ }
+.form-control{
+    height: 2.2rem;
+    width: 50%;
+}
+#startbtn{
+    height: 3.2rem; 
+    width:8rem;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    margin: 1rem;
+    color: darkslategray;
+}
+.container input{
+    font-size: 1.4rem;
+    padding: 0.3rem;
+}
+#levels{
+    padding:0.4rem;
+    font-size: 1rem;
+}
+.container select{
+    width:35%;
+}
+#label{
+    font-size: 1.2rem;
+}
